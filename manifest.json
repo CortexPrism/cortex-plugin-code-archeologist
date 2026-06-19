@@ -1,0 +1,29 @@
+{
+  "name": "cortex-plugin-code-archeologist",
+  "version": "1.0.0",
+  "description": "Codebase Archeologist — Trace full history of any code: git blame, PRs, issues, Slack conversations, and ADRs",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-code-archeologist",
+  "homepage": "https://cortexprism.io/marketplace/plugins/code-archeologist",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "archeo_trace", "description": "Trace full history of a code section", "params": [] },
+    {
+      "name": "archeo_context",
+      "description": "Reconstruct original context and intent",
+      "params": []
+    },
+    {
+      "name": "archeo_blame",
+      "description": "Deep git blame with PR and issue links",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
